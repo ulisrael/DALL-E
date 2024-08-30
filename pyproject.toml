@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DALL-E"
+version = "0.1"
+description = "PyTorch package for the discrete VAE used for DALL·E."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "BSD"}
+authors = [
+    { name = "Aditya Ramesh", email = "aramesh@openai.com" }
+]
+
+# Add dependencies here if you have any
+
+[tool.setuptools.packages.find]
+include = ["dall_e", "dall_e.*"]
